@@ -1,6 +1,9 @@
+int testVar = 10;
+
 void setup() {
   // initialize digital pin 13 as an output
   pinMode(13, OUTPUT);
+  pinMode(testVar, OUTPUT);
 }
 
 void loop() {
@@ -13,8 +16,10 @@ void loop() {
   delay(2000);
 
   digitalWrite(13, HIGH);
+  digitalWrite(testVar, HIGH);
   delay(500);
   digitalWrite(13, LOW);
+  digitalWrite(testVar, LOW);
   delay(300);
   digitalWrite(13, HIGH);
   delay(500);
@@ -26,8 +31,10 @@ void loop() {
   digitalWrite(13, LOW);
   delay(300);
   digitalWrite(13, HIGH);
+  digitalWrite(testVar, HIGH);
   delay(500);
   digitalWrite(13, LOW);
+  digitalWrite(testVar, LOW);
   delay(300);
   digitalWrite(13, HIGH);
   delay(500);
